@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { useSearchParams } from "next/navigation";
 import { supabase } from "../../../lib/supabase";
 
 type Profile = {
@@ -154,8 +153,6 @@ function getDocument(
 }
 
 export default function AdminTablePage() {
-  const searchParams = useSearchParams();
-
   const [profile, setProfile] = useState<Profile | null>(null);
   const [investments, setInvestments] = useState<InvestmentView[]>([]);
   const [filters, setFilters] = useState<FilterState>(emptyFilters);
@@ -411,9 +408,12 @@ export default function AdminTablePage() {
   }, []);
 
   useEffect(() => {
-    const offeringId = searchParams.get("offering");
-    const status = searchParams.get("status");
-    const missing = searchParams.get("missing");
+    if (typeof window === "undefined") return;
+
+    const params = new URLSearchParams(window.location.search);
+    const offeringId = params.get("offering");
+    const status = params.get("status");
+    const missing = params.get("missing");
 
     setFilters((current) => ({
       ...current,
@@ -421,7 +421,7 @@ export default function AdminTablePage() {
       status: status ?? current.status,
       missingDocument: missing ?? current.missingDocument,
     }));
-  }, [searchParams]);
+  }, []);
 
   function updateFilter<K extends keyof FilterState>(
     key: K,

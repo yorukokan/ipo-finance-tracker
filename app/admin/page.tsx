@@ -103,7 +103,7 @@ export default function AdminPage() {
     if (accountError) {
       setMessage(`Hesaplar alınamadı: ${accountError.message}`);
     } else {
-      setAccounts((accountData ?? []) as Account[]);
+      setAccounts((accountData ?? []) as unknown as Account[]);
     }
 
     setIsLoading(false);
