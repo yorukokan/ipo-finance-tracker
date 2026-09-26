@@ -1,312 +1,329 @@
 <div align="center">
-# 📊 IPO Finance Tracker
-### 🚀 Halka Arz Yatırımlarını Tek Panelden Yönet
-**Başvuru • Portföy • Satış • Kâr Paylaşımı • Nakit Akışı**
+
+# 💰 IPO Finance Tracker
+
+### Halka Arz Yatırım ve Finans Takip Sistemi
+
+Kullanıcıların halka arz yatırımlarını, yatırım hesaplarını,  
+nakit hareketlerini, alım-satım işlemlerini ve kâr paylaşımını  
+tek bir platform üzerinden takip edebilmesini sağlayan modern web uygulaması.
+
 <br>
+
 <a href="https://arz-finans-takip.vercel.app/">
-  <img src="https://img.shields.io/badge/🌐_Canlı_Demo-arz--finans--takip.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo">
+  <img src="https://img.shields.io/badge/🌐_Canlı_Uygulama-arz--finans--takip.vercel.app-000000?style=for-the-badge" alt="Live App">
 </a>
+
 <a href="https://github.com/yorukokan/ipo-finance-tracker">
-  <img src="https://img.shields.io/badge/GitHub-Kaynak_Kod-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  <img src="https://img.shields.io/badge/GitHub-Kaynak_Kod-181717?style=for-the-badge&logo=github" alt="GitHub">
 </a>
+
 <br><br>
-<img src="https://img.shields.io/badge/Next.js-16-000000?style=flat-square&logo=next.js" alt="Next.js">
-<img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React">
+
+<img src="https://img.shields.io/badge/Next.js-16.2.10-000000?style=flat-square&logo=next.js" alt="Next.js">
+<img src="https://img.shields.io/badge/React-19.2.4-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React">
 <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
 <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
 <img src="https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase">
-<img src="https://img.shields.io/badge/Vercel-Deployed-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel">
+<img src="https://img.shields.io/badge/Vercel-Deployed-000000?style=flat-square&logo=vercel" alt="Vercel">
+
 </div>
+
 ---
+
 ## 📌 Proje Hakkında
-**IPO Finance Tracker**, birden fazla kullanıcının halka arz yatırımlarını, yatırım hesaplarını, başvurularını, portföylerini, satış işlemlerini ve nakit hareketlerini tek bir merkezi panel üzerinden takip edebilmesini sağlayan modern bir web uygulamasıdır.
-Proje **kullanıcı + admin** yapısı üzerine kurulmuştur. Kullanıcılar kendi yatırım ve finansal verilerini görüntülerken, yöneticiler sistemdeki kullanıcıları, halka arzları, yatırımları ve nakit akışını merkezi bir panel üzerinden yönetebilir.
-> 🎯 Amaç: Halka arz süreçlerinde Excel, mesajlaşma uygulamaları ve dağınık hesaplamalar yerine tüm yatırım sürecini tek, düzenli ve takip edilebilir bir platformda yönetmek.
+
+**IPO Finance Tracker**, halka arz yatırımlarının düzenli ve merkezi bir şekilde takip edilmesi amacıyla geliştirilmiş full-stack bir web uygulamasıdır.
+
+Sistem; kullanıcı bazlı yatırım kayıtlarını, halka arz başvurularını, tahsis edilen lotları, alış ve satış işlemlerini, nakit hareketlerini ve kâr paylaşımını yönetmek için tasarlanmıştır.
+
+Uygulamada iki temel kullanıcı rolü bulunmaktadır:
+
+| Rol | Açıklama |
+|---|---|
+| 👤 **Kullanıcı** | Kendi yatırım hesaplarını, halka arz yatırımlarını ve finansal hareketlerini görüntüler. |
+| 🛠️ **Yönetici** | Kullanıcıları, halka arzları, yatırımları ve nakit hareketlerini merkezi olarak yönetir. |
+
 ---
-# ✨ Öne Çıkan Özellikler
-<table>
-<tr>
-<td width="50%">
-### 👤 Kullanıcı Yönetimi
-- 🔐 Supabase Authentication
-- 👥 Kullanıcı / Admin rol ayrımı
-- 🧑 Kullanıcı profilleri
-- 💰 Kullanıcı bazlı kâr paylaşım oranı
-- 📊 Kişiye özel yatırım görünümü
-</td>
-<td width="50%">
+
+## 🚀 Canlı Demo
+
+<div align="center">
+
+### 🌐 Uygulamayı İncele
+
+<a href="https://arz-finans-takip.vercel.app/">
+  <img src="https://img.shields.io/badge/Uygulamaya_Git-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Application">
+</a>
+
+</div>
+
+---
+
+## ✨ Temel Özellikler
+
+### 🔐 Kimlik Doğrulama
+
+- Kullanıcı giriş sistemi
+- Supabase Authentication
+- Kullanıcı ve yönetici rolleri
+- Yetkilendirilmiş sayfa erişimi
+- Kullanıcıya özel yatırım verileri
+
 ### 📈 Halka Arz Yönetimi
-- 🏷️ Halka arz tanımlama
-- 📅 Halka arz bilgilerini yönetme
-- 📦 Tahsis edilen lot takibi
-- 💵 Alış maliyeti hesaplama
-- 📊 Yatırım bazlı finansal takip
-</td>
-</tr>
-<tr>
-<td>
-### 💼 Portföy Yönetimi
-- 🏦 Yatırım hesabı takibi
-- 📋 Yatırım kayıtları
-- 🎯 Alınan lot miktarı
-- 💰 Toplam maliyet
-- 📈 Güncel yatırım durumu
-</td>
-<td>
-### 💸 Satış & Kâr Takibi
-- 📤 Satış işlemleri
-- 📦 Satılan lot miktarı
-- 💵 Satış fiyatı
-- 📊 Kâr / zarar hesaplama
-- 📈 Kâr yüzdesi
-- 🤝 Kâr paylaşımı
-</td>
-</tr>
-<tr>
-<td>
+
+- Halka arz oluşturma
+- Halka arz bilgilerini düzenleme
+- Başvuru takibi
+- Tahsis edilen lotların yönetimi
+- Alış fiyatlarının takibi
+- Satış işlemlerinin kaydı
+- Halka arz bazlı özetler
+
+### 💳 Yatırım Hesapları
+
+Kullanıcıların farklı banka veya yatırım hesapları sistem içerisinde ayrı ayrı takip edilebilir.
+
+Takip edilebilen bilgiler:
+
+- Hesap adı
+- Hesap sahibi
+- Hesap bakiyesi
+- Para girişleri
+- Para çıkışları
+- Yatırım hareketleri
+
 ### 💰 Nakit Akışı
-- 💸 Kullanıcılara gönderilen para
-- 📥 Geri alınan para
-- 🧾 Nakit hareketleri
-- ⚖️ Bakiye takibi
-- 🔄 Geri ödeme süreçleri
-</td>
-<td>
-### 🛠️ Admin Paneli
-- 📊 Genel bakış
-- 👥 Kullanıcı yönetimi
-- 🏦 Hesap yönetimi
-- 📈 Halka arz yönetimi
-- 💼 Yatırım yönetimi
-- 💰 Nakit yönetimi
-</td>
-</tr>
-</table>
+
+Sistemde gerçekleşen para hareketleri merkezi olarak takip edilebilir.
+
+Örneğin:
+
+- Kullanıcıya para gönderme
+- Kullanıcıdan para alma
+- Halka arz için gönderilen para
+- Satış sonrası oluşan nakit
+- Kullanıcıya geri ödeme
+- Kalan nakit
+
+### 📊 Kâr / Zarar Takibi
+
+Her yatırım için finansal sonuçlar hesaplanabilir.
+
+Takip edilen temel değerler:
+
+- Toplam maliyet
+- Alış tutarı
+- Satış tutarı
+- Kâr / zarar
+- Kârlılık yüzdesi
+- Kullanıcı payı
+- Geri ödenecek tutar
+- Kalan nakit
+
+### 🤝 Kullanıcı Bazlı Kâr Paylaşımı
+
+Sistem kullanıcı bazında farklı kâr paylaşım oranlarının uygulanmasına olanak sağlar.
+
+Örneğin:
+
+> Yatırım kârı → %20 kullanıcı payı → kalan tutar sistem tarafından takip edilir.
+
+Varsayılan kâr paylaşım oranı sistem içerisinde yönetilebilir.
+
+### 🛠️ Yönetici Paneli
+
+Yönetici paneli üzerinden:
+
+- Kullanıcılar
+- Yatırım hesapları
+- Halka arzlar
+- Yatırımlar
+- Başvurular
+- Nakit hareketleri
+- Satış işlemleri
+- Özet finansal veriler
+
+merkezi olarak yönetilebilir.
+
 ---
-# 🧠 Sistem Mimarisi
-```mermaid
-flowchart TD
-    A[👤 Kullanıcı] --> B[🌐 Next.js Web Application]
-    B --> C[🔐 Supabase Authentication]
-    B --> D{👮 Kullanıcı Rolü}
-    D -->|User| E[📊 Kullanıcı Paneli]
-    D -->|Admin| F[🛠️ Admin Paneli]
-    E --> G[💼 Yatırımlar]
-    E --> H[📈 Portföy]
-    E --> I[💰 Finansal Durum]
-    F --> J[👥 Kullanıcı Yönetimi]
-    F --> K[📈 Halka Arz Yönetimi]
-    F --> L[🏦 Hesap Yönetimi]
-    F --> M[💸 Nakit Akışı]
-    F --> N[📊 Raporlama]
-    B --> O[(🗄️ Supabase / PostgreSQL)]
-    G --> O
-    H --> O
-    I --> O
-    J --> O
-    K --> O
-    L --> O
-    M --> O
-    N --> O
 
-⸻
+## 🧩 Sistem Mimarisi
 
-🔄 Yatırım Süreci
+<div align="center">
 
-                    HALKA ARZ SÜRECİ
-                           │
-                           ▼
-                ┌─────────────────────┐
-                │ 📈 Halka Arz Tanımı │
-                └──────────┬──────────┘
-                           │
-                           ▼
-                ┌─────────────────────┐
-                │ 📝 Başvuru          │
-                │                     │
-                │ Yatırım hesabı     │
-                │ Başvuru tutarı     │
-                └──────────┬──────────┘
-                           │
-                           ▼
-                ┌─────────────────────┐
-                │ 🎯 Tahsis           │
-                │                     │
-                │ Lot miktarı        │
-                │ Alış maliyeti      │
-                └──────────┬──────────┘
-                           │
-                           ▼
-                ┌─────────────────────┐
-                │ 💼 Portföy          │
-                │                     │
-                │ Yatırım takibi     │
-                └──────────┬──────────┘
-                           │
-                           ▼
-                ┌─────────────────────┐
-                │ 📤 Satış            │
-                │                     │
-                │ Satılan lot        │
-                │ Satış fiyatı       │
-                └──────────┬──────────┘
-                           │
-                           ▼
-                ┌─────────────────────┐
-                │ 📊 Kâr / Zarar      │
-                │                     │
-                │ Brüt kâr           │
-                │ Kâr paylaşımı      │
-                │ Net sonuç          │
-                └──────────┬──────────┘
-                           │
-                           ▼
-                ┌─────────────────────┐
-                │ 💰 Nakit Mutabakatı│
-                └─────────────────────┘
+<pre>
+┌───────────────────────────────┐
+│          Kullanıcı            │
+│                               │
+│  • Giriş                      │
+│  • Yatırımlar                 │
+│  • Halka Arzlar               │
+│  • Portföy                    │
+│  • Finansal Hareketler        │
+└───────────────┬───────────────┘
+                │
+                ▼
+┌───────────────────────────────┐
+│          Next.js              │
+│                               │
+│  App Router + React + TS      │
+│                               │
+│  • User Panel                 │
+│  • Admin Panel                │
+│  • API / Server Logic         │
+└───────────────┬───────────────┘
+                │
+                ▼
+┌───────────────────────────────┐
+│           Supabase            │
+│                               │
+│  • Authentication             │
+│  • PostgreSQL                 │
+│  • Database                   │
+└───────────────┬───────────────┘
+                │
+                ▼
+┌───────────────────────────────┐
+│            Vercel             │
+│                               │
+│       Production Deploy       │
+└───────────────────────────────┘
+</pre>
 
-⸻
+</div>
 
-👤 Kullanıcı Paneli
+---
 
-Kullanıcı tarafında yatırımcıya ait finansal bilgiler merkezi bir dashboard üzerinden görüntülenebilir.
+## 🗄️ Veritabanı Yapısı
 
-Alan	Açıklama
-👤 Profil	Kullanıcı bilgileri
-🏦 Hesaplar	Kullanıcıya ait yatırım hesapları
-📈 Halka Arzlar	Kullanıcının dahil olduğu halka arzlar
-📦 Lotlar	Tahsis edilen / alınan lotlar
-💵 Maliyet	Toplam yatırım maliyeti
-📤 Satışlar	Gerçekleşen satış işlemleri
-📊 Kâr / Zarar	Yatırım performansı
-💰 Bakiye	Finansal durum ve nakit hareketleri
+Uygulamanın temel veri modeli PostgreSQL üzerinde oluşturulmuştur.
 
-⸻
+### Ana Tablolar
 
-🛠️ Admin Paneli
+| Tablo | Açıklama |
+|---|---|
+| `profiles` | Kullanıcı bilgileri ve roller |
+| `investment_accounts` | Kullanıcıların yatırım / banka hesapları |
+| `offerings` | Halka arz bilgileri |
+| `investments` | Kullanıcıların halka arz yatırımları |
 
-Admin paneli sistemdeki finansal ve yatırım süreçlerinin merkezi olarak yönetilmesini sağlar.
+### İlişkisel Yapı
 
-/admin
-│
-├── 📊 Overview
-├── 💸 Cash
-├── 📈 Offerings
-├── 📋 Offerings Summary
-├── 📊 Overview
-└── 📑 Table
+<pre>
+profiles
+   │
+   ├──────────────► investment_accounts
+   │
+   └──────────────► investments
+                         │
+                         ▼
+                     offerings
+</pre>
 
-Admin Yetkinlikleri
+Bu yapı sayesinde kullanıcı, yatırım hesabı, halka arz ve yatırım kayıtları arasında ilişkisel veri yönetimi sağlanmaktadır.
 
-* 👥 Kullanıcıları yönetme
-* 🏦 Yatırım hesaplarını yönetme
-* 📈 Halka arz ekleme / düzenleme
-* 💼 Yatırım kayıtlarını takip etme
-* 💸 Nakit hareketlerini yönetme
-* 📊 Genel finansal özetleri görüntüleme
-* 📋 Verileri tablo üzerinden inceleme
+---
 
-⸻
+## 👤 Kullanıcı Akışı
 
-🗄️ Veri Modeli
+<pre>
+Giriş
+  │
+  ▼
+Kullanıcı Paneli
+  │
+  ├──► Yatırım Hesapları
+  │
+  ├──► Halka Arzlar
+  │       │
+  │       ├──► Başvuru
+  │       └──► Tahsis Edilen Lot
+  │
+  ├──► Portföy
+  │
+  └──► Finansal Hareketler
+          │
+          ├──► Para Girişi
+          ├──► Para Çıkışı
+          ├──► Satış
+          └──► Geri Ödeme
+</pre>
 
-Uygulamanın temel veri yapısı Supabase PostgreSQL üzerinde oluşturulmuştur.
+---
 
-Tablo	Amaç
-profiles	Kullanıcı profilleri ve rol bilgileri
-investment_accounts	Yatırım hesapları
-offerings	Halka arz bilgileri
-investments	Kullanıcı yatırım kayıtları
+## 🛠️ Yönetici Akışı
 
-İlişki Yapısı
+<pre>
+Admin Girişi
+     │
+     ▼
+Yönetim Paneli
+     │
+     ├──► Kullanıcı Yönetimi
+     │
+     ├──► Yatırım Hesapları
+     │
+     ├──► Halka Arz Yönetimi
+     │
+     ├──► Başvuru Yönetimi
+     │
+     ├──► Nakit Yönetimi
+     │
+     ├──► Yatırım Tablosu
+     │
+     ├──► Halka Arz Özetleri
+     │
+     └──► Genel Bakış
+</pre>
 
-erDiagram
-    PROFILES ||--o{ INVESTMENT_ACCOUNTS : owns
-    PROFILES ||--o{ INVESTMENTS : makes
-    OFFERINGS ||--o{ INVESTMENTS : contains
-    INVESTMENT_ACCOUNTS ||--o{ INVESTMENTS : uses
-    PROFILES {
-        uuid id PK
-        string role
-        float profit_share_rate
-    }
-    INVESTMENT_ACCOUNTS {
-        uuid id PK
-        uuid user_id FK
-        string account_name
-    }
-    OFFERINGS {
-        uuid id PK
-        string name
-        date start_date
-    }
-    INVESTMENTS {
-        uuid id PK
-        uuid user_id FK
-        uuid offering_id FK
-        uuid account_id FK
-        int lots
-        decimal buy_price
-        decimal sell_price
-        decimal profit
-    }
+---
 
-⸻
+## 🧑‍💻 Teknolojiler
 
-🧮 Finansal Hesaplama Mantığı
+### Frontend
 
-Toplam Alış Maliyeti
+- **Next.js 16.2.10**
+- **React 19.2.4**
+- **TypeScript**
+- **Tailwind CSS 4**
+- **Next.js App Router**
 
-Alış Maliyeti = Alınan Lot × Alış Fiyatı
+### Backend / Database
 
-Toplam Satış Tutarı
+- **Supabase**
+- **PostgreSQL**
+- **Supabase Authentication**
 
-Satış Tutarı = Satılan Lot × Satış Fiyatı
+### Deployment
 
-Brüt Kâr / Zarar
+- **Vercel**
 
-Brüt Kâr = Satış Tutarı - Satılan Lotların Maliyeti
+### Development
 
-Kâr Oranı
+- **Git**
+- **GitHub**
+- **VS Code**
 
-Kâr % = (Brüt Kâr / Maliyet) × 100
+---
 
-Kâr Paylaşımı
+## 📂 Proje Yapısı
 
-Kullanıcı Payı = Brüt Kâr × Kâr Paylaşım Oranı
-
-⸻
-
-🧱 Teknoloji Stack
-
-Teknoloji	Kullanım Alanı
-⚛️ React	Kullanıcı arayüzü
-▲ Next.js	Full-stack React framework
-🔷 TypeScript	Type-safe geliştirme
-🎨 Tailwind CSS	UI / Styling
-🟢 Supabase	Backend & Authentication
-🐘 PostgreSQL	Veritabanı
-▲ Vercel	Deployment
-
-⸻
-
-📦 Proje Yapısı
-
+<pre>
 ipo-finance-tracker/
 │
 ├── app/
-│   ├── page.tsx
+│   ├── admin/
+│   │   ├── cash/
+│   │   ├── offerings/
+│   │   ├── offerings-summary/
+│   │   ├── overview/
+│   │   └── table/
 │   │
 │   ├── my/
-│   │   └── page.tsx
 │   │
-│   └── admin/
-│       ├── page.tsx
-│       ├── cash/
-│       ├── offerings/
-│       ├── offerings-summary/
-│       ├── overview/
-│       └── table/
+│   ├── page.tsx
+│   └── ...
 │
 ├── lib/
 │   └── supabase.ts
@@ -316,162 +333,301 @@ ipo-finance-tracker/
 ├── package.json
 ├── tsconfig.json
 ├── next.config.ts
+├── postcss.config.mjs
 └── README.md
+</pre>
 
-⸻
+---
 
-🚀 Kurulum
+## ⚙️ Kurulum
 
-1️⃣ Repoyu Klonla
+### 1. Repoyu Klonla
 
-git clone https://github.com/yorukokan/ipo-finance-tracker.git
-cd ipo-finance-tracker
+    git clone https://github.com/yorukokan/ipo-finance-tracker.git
 
-2️⃣ Bağımlılıkları Yükle
+### 2. Proje Klasörüne Gir
 
-npm install
+    cd ipo-finance-tracker
 
-3️⃣ Environment Variables
+### 3. Bağımlılıkları Yükle
 
-Proje kök dizininde .env.local dosyası oluştur:
+    npm install
 
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+### 4. Environment Değişkenlerini Tanımla
 
-🔐 Gerçek Supabase anahtarlarını GitHub’a yüklemeyin.
+Proje kök dizininde `.env.local` dosyası oluştur:
 
-4️⃣ Development Server
+    NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 
-npm run dev
+Supabase proje bilgilerini kendi Supabase projen üzerinden doldur.
 
-Ardından:
+### 5. Development Sunucusunu Başlat
 
-http://localhost:3000
+    npm run dev
 
-adresini açabilirsiniz.
+Ardından uygulamayı aşağıdaki adresten aç:
 
-⸻
+    http://localhost:3000
 
-🧪 Kullanılabilir Komutlar
+---
 
-Komut	Açıklama
-npm run dev	Development server başlatır
-npm run build	Production build oluşturur
-npm run start	Production server başlatır
-npm run lint	Kod kalitesini kontrol eder
+## 🔑 Environment Variables
 
-⸻
+| Değişken | Açıklama |
+|---|---|
+| `NEXT_PUBLIC_SUPABASE_URL` | Supabase proje URL'si |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase public/anon key |
 
-🌐 Canlı Demo
+> ⚠️ Gerçek `.env.local` dosyanı GitHub'a yüklememeye dikkat et.
+
+---
+
+## 📊 Uygulama Modülleri
+
+### 🏠 Genel Bakış
+
+Yönetici tarafında sistemin genel finansal durumunun izlenmesini sağlar.
+
+### 👥 Kullanıcı Yönetimi
+
+Kullanıcıların sistem içerisindeki rollerinin ve ilişkili yatırım bilgilerinin yönetilmesini sağlar.
+
+### 🏦 Yatırım Hesapları
+
+Farklı banka / yatırım hesaplarının sistem içerisinde tutulmasını sağlar.
+
+### 📋 Başvuru Yönetimi
+
+Halka arz başvurularının kullanıcı bazında takip edilmesini sağlar.
+
+### 📈 Yatırım Tablosu
+
+Yatırımların merkezi bir tabloda görüntülenmesini sağlar.
+
+### 💸 Nakit Yönetimi
+
+Kullanıcılar ve yatırımlar arasındaki para hareketlerinin takip edilmesini sağlar.
+
+### 📊 Halka Arz Özetleri
+
+Halka arz bazında yatırım ve finansal sonuçların özetlenmesini sağlar.
+
+---
+
+## 🔄 Finansal İşlem Mantığı
+
+Sistem içerisinde temel yatırım süreci aşağıdaki şekilde ilerler:
+
+<pre>
+Halka Arz
+   │
+   ▼
+Başvuru
+   │
+   ▼
+Tahsis Edilen Lot
+   │
+   ▼
+Alış / Maliyet
+   │
+   ▼
+Portföy
+   │
+   ▼
+Satış
+   │
+   ▼
+Satış Tutarı
+   │
+   ├──────────────► Kâr / Zarar
+   │
+   ├──────────────► Kullanıcı Payı
+   │
+   └──────────────► Geri Ödeme / Kalan Nakit
+</pre>
+
+---
+
+## 🧮 Finansal Takip
+
+Yatırım bazında aşağıdaki değerler takip edilebilir:
+
+| Finansal Veri | Açıklama |
+|---|---|
+| Lot | Alınan / tahsis edilen hisse adedi |
+| Maliyet | Yatırım için kullanılan toplam tutar |
+| Alış Tutarı | Gerçekleşen alış miktarı |
+| Satış Tutarı | Gerçekleşen satış miktarı |
+| Kâr / Zarar | Alış ve satış arasındaki finansal sonuç |
+| Kâr Oranı | Yatırımın yüzde bazında sonucu |
+| Kullanıcı Payı | Kullanıcıya ait kâr oranı |
+| Geri Ödeme | Kullanıcıya aktarılması gereken tutar |
+| Kalan Nakit | İşlem sonrasında kalan tutar |
+
+---
+
+## 🎯 Projenin Amacı
+
+Bu projenin temel amacı, birden fazla kullanıcı ve yatırım hesabının bulunduğu halka arz süreçlerinde manuel olarak tutulan finansal kayıtları merkezi bir web uygulamasına taşımaktır.
+
+Sistem sayesinde:
+
+- 📌 Veriler tek yerde tutulabilir.
+- 📊 Yatırımlar daha kolay takip edilebilir.
+- 💰 Nakit hareketleri kayıt altına alınabilir.
+- 📈 Kâr / zarar hesaplamaları izlenebilir.
+- 👤 Kullanıcı bazlı yatırım verileri ayrıştırılabilir.
+- 🛠️ Yönetici işlemleri merkezi bir panel üzerinden gerçekleştirilebilir.
+
+---
+
+## 🔒 Güvenlik
+
+Projede kullanıcı yetkilendirmesi ve veri erişimi Supabase altyapısı üzerinden yönetilmektedir.
+
+Önemli güvenlik prensipleri:
+
+- Kullanıcı ve admin rollerinin ayrılması
+- Kullanıcıya özel veri erişimi
+- Supabase Authentication kullanımı
+- Hassas environment değişkenlerinin `.env.local` içerisinde tutulması
+- Secret bilgilerin repository içerisinde saklanmaması
+
+> Production ortamında Supabase Row Level Security (RLS) politikalarının doğru şekilde yapılandırılması ve düzenli olarak kontrol edilmesi önemlidir.
+
+---
+
+## 🌐 Deployment
+
+Uygulama **Vercel** üzerinde deploy edilmiştir.
+
+### Production
+
+    https://arz-finans-takip.vercel.app/
+
+Deployment sürecinde temel olarak:
+
+<pre>
+GitHub Repository
+       │
+       ▼
+     Vercel
+       │
+       ├──► Build
+       │
+       ├──► Environment Variables
+       │
+       └──► Production Deployment
+</pre>
+
+---
+
+## 📱 Responsive Tasarım
+
+Uygulama farklı ekran boyutlarında kullanılabilecek şekilde tasarlanmıştır.
+
+Desteklenen kullanım senaryoları:
+
+- 🖥️ Desktop
+- 💻 Laptop
+- 📱 Mobil
+- 📱 Tablet
+
+---
+
+## 📌 Gelecekte Eklenebilecek Özellikler
+
+Projenin ilerleyen aşamalarında aşağıdaki özellikler eklenebilir:
+
+- [ ] 📊 Daha gelişmiş grafik ve dashboard
+- [ ] 📈 Portföy performans grafikleri
+- [ ] 📅 Tarih bazlı finansal raporlama
+- [ ] 📥 Excel / CSV dışa aktarma
+- [ ] 📄 PDF raporlama
+- [ ] 🔔 Bildirim sistemi
+- [ ] 📧 E-posta bildirimleri
+- [ ] 🔎 Gelişmiş filtreleme
+- [ ] 📊 Kullanıcı bazlı performans raporları
+- [ ] 📱 PWA desteği
+- [ ] 🌙 Gelişmiş dark mode
+- [ ] 🧾 İşlem geçmişi / audit log
+- [ ] 🔐 Daha kapsamlı rol ve yetki yönetimi
+
+---
+
+## 🧠 Öğrenilen Teknolojiler
+
+Bu proje geliştirilirken aşağıdaki konularda pratik kazanılmıştır:
+
+- Next.js App Router
+- React
+- TypeScript
+- Tailwind CSS
+- Supabase
+- PostgreSQL
+- Authentication
+- Role-based access control
+- CRUD işlemleri
+- İlişkisel veritabanı tasarımı
+- Finansal veri modelleme
+- Server / Client Component ayrımı
+- Vercel deployment
+- Git / GitHub workflow
+
+---
+
+## 🤝 Katkıda Bulunma
+
+Projeyi geliştirmek veya katkıda bulunmak isteyenler:
+
+1. Repository'yi fork'layabilir.
+2. Yeni bir branch oluşturabilir.
+3. Değişikliklerini gerçekleştirebilir.
+4. Commit oluşturabilir.
+5. Pull Request gönderebilir.
+
+Örnek branch:
+
+    git checkout -b feature/yeni-ozellik
+
+Commit:
+
+    git add .
+    git commit -m "Yeni özellik eklendi"
+
+Push:
+
+    git push origin feature/yeni-ozellik
+
+---
+
+## 📄 Lisans
+
+Bu repository'nin lisans bilgileri için repository içerisinde bulunan lisans dosyasını inceleyebilirsiniz.
+
+---
 
 <div align="center">
-<a href="https://arz-finans-takip.vercel.app/">
-<img src="https://img.shields.io/badge/🚀_LIVE_DEMO-arz--finans--takip.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo">
-</a>
 
-https://arz-finans-takip.vercel.app/
+## 💻 Geliştirici
 
-</div>
+### Okan Yörük
 
-⸻
-
-🔮 Gelecek Geliştirmeler
-
-* 📊 Daha gelişmiş finansal dashboard
-* 📈 Grafik tabanlı portföy analizi
-* 📅 Halka arz takvim sistemi
-* 🔔 Bildirim sistemi
-* 📱 Mobil uyumluluğun geliştirilmesi
-* 📄 PDF / Excel rapor oluşturma
-* 📊 Kullanıcı bazlı performans raporları
-* 🔎 Gelişmiş filtreleme ve arama
-* 📤 CSV / Excel veri aktarımı
-* 📈 Daha detaylı yatırım istatistikleri
-
-⸻
-
-🎯 Projenin Amacı
-
-Bu proje, gerçek bir finansal takip senaryosunun yazılım ile nasıl modellenebileceğini göstermek amacıyla geliştirilmiştir.
-
-Proje kapsamında:
-
-Problem
-   ↓
-Finansal verilerin dağınık olması
-   ↓
-Veri modeli oluşturma
-   ↓
-Supabase / PostgreSQL
-   ↓
-Next.js uygulaması
-   ↓
-Authentication
-   ↓
-Role-Based Access
-   ↓
-Admin Panel
-   ↓
-Finansal Hesaplamalar
-   ↓
-Deployment
-
-gibi gerçek bir uygulama geliştirme süreci ele alınmıştır.
-
-⸻
-
-🔐 Güvenlik
-
-Projede aşağıdaki konulara dikkat edilmelidir:
-
-* 🔒 Authentication
-* 👮 Role-based authorization
-* 🔑 Environment variables
-* 🗄️ Supabase database security
-* 🚫 Hassas bilgilerin repository’ye gönderilmemesi
-
-.env.local dosyasının Git repository’sine eklenmemesi gerekir.
-
-.env
-.env.local
-.env.production
-
-⸻
-
-⚠️ Disclaimer
-
-Bu uygulama bir yatırım tavsiyesi veya finansal danışmanlık hizmeti değildir.
-
-Uygulamadaki finansal hesaplamalar yalnızca kayıt ve takip amacıyla kullanılmalıdır.
-
-Gerçek yatırım kararları verilmeden önce bağımsız olarak araştırma yapılması ve gerektiğinde yetkili finansal danışmanlardan profesyonel destek alınması gerekir.
-
-⸻
-
-👨‍💻 Geliştirici
-
-<div align="center">
-
-Okan Yörük
-
-Computer Engineering Student • Software Developer
+Computer Engineering Student & Software Developer
 
 <br>
+
 <a href="https://github.com/yorukokan">
-  <img src="https://img.shields.io/badge/GitHub-yorukokan-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  <img src="https://img.shields.io/badge/GitHub-yorukokan-181717?style=for-the-badge&logo=github" alt="GitHub">
 </a>
-<a href="https://linkedin.com/in/okanyoruk">
+
+<a href="https://www.linkedin.com/in/okanyoruk/">
   <img src="https://img.shields.io/badge/LinkedIn-Okan_Yörük-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
 </a>
-</div>
 
-⸻
+<br><br>
 
-<div align="center">
-
-⭐ Projeyi Beğendiysen Star Vermeyi Unutma!
-
-Built with ❤️ using Next.js & Supabase
+⭐ Projeyi faydalı bulduysan repository'ye yıldız bırakmayı unutma!
 
 </div>
-```
